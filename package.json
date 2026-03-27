@@ -1,0 +1,31 @@
+{
+  "name": "@peterr0x/usage-plugin",
+  "version": "0.1.0",
+  "description": "Automatically tracks token usage and cost per agent session, supports configurable monthly budgets with warning notifications, and auto-cleans old records based on a retention policy.",
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "test": "vitest",
+    "prepublishOnly": "npm run build"
+  },
+  "author": "Peter Parker",
+  "license": "MIT",
+  "keywords": [
+    "openacp",
+    "openacp-plugin"
+  ],
+  "peerDependencies": {
+    "@openacp/cli": ">=2026.0326.4"
+  },
+  "dependencies": {
+    "nanoid": "^5.0.0"
+  },
+  "devDependencies": {
+    "@openacp/plugin-sdk": "2026.0326.4",
+    "typescript": "^5.4.0",
+    "vitest": "^3.0.0"
+  }
+}
